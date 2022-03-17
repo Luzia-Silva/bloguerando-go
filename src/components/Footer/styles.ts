@@ -4,7 +4,7 @@ const SmallFooter = styled.footer`
     background-color: #000;
     width: 100vw;
     bottom:0;
-    position: fixed;
+    position: relative;
     .SmallPages{
       padding: 1.5em;
        li{
