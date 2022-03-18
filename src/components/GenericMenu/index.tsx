@@ -12,7 +12,7 @@ const GenericMenu = () =>{
           <p>Esse blog é para você meu leitor que curte coisas novas e surtos de uma mente feminina em colapso. Mas essa mente feminina ama você, ama suas escolhas (mesmo eu querendo dar na sua cara), ama seu cabelo, ama sua roupa e ama você todinho. Você nem me conhece, como pode me amar? Eu amo você só pelo fato de você estar aqui e me dar a oportunidade de nos conhecermos. Sim, eu amo você! Seja muito bem-vindo aos meus mais profundos pensamentos e desabafos!</p>
       </div>
       <div className='button-menu'>
-        <button><a href='#'>Começar</a></button>
+        <button><a href='/Profile'>Começar</a></button>
       </div>
     </SmallMenu>
     </>

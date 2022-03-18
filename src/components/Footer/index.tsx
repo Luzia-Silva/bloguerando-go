@@ -20,16 +20,16 @@ const Footer = () => {
     <div className="SmallIcons">
       <a href="https://www.youtube.com/c/jamesqquick"
         className="Linkedin social">
-        <FontAwesomeIcon icon={faLinkedin} size="2x"  />
+        <FontAwesomeIcon icon={faLinkedin} size="1x"  />
       </a>
       <a href="https://www.facebook.com/luzia.gabrielaabreu" className="Facebook social">
-        <FontAwesomeIcon icon={faFacebook} size="2x"  />
+        <FontAwesomeIcon icon={faFacebook} size="1x"  />
       </a>
       <a href="https://github.com/Luzia-Silva/" className="Github social">
-        <FontAwesomeIcon icon={faGithub} size="2x" />
+        <FontAwesomeIcon icon={faGithub} size="1x" />
       </a>
       <a href="https://www.instagram.com/luziabreu_/?hl=pt-br" className="Instagram social">
-        <FontAwesomeIcon icon={faInstagram} size="2x" />
+        <FontAwesomeIcon icon={faInstagram} size="1x" />
       </a>
     </div>
     <div className="SmallFooterCopyright">
