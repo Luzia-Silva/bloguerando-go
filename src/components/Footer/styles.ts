@@ -29,7 +29,6 @@ const SmallFooter = styled.footer`
 
   .SmallFooterCopyright{
     background-color: #e3dce3;
-    width: 100vw;
     bottom: 0;
     padding: 0.8rem;
     p{
