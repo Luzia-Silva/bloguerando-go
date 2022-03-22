@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 const SmallProfile = styled.div`
-    margin-top: 2rem;
+    margin-top: 8rem;
     align-items: center;
     .imageProfile img{
       border-radius: 10rem;
@@ -14,11 +14,7 @@ const SmallProfile = styled.div`
     { color: #000;
       background-color: #e81cd896;
     > h1 {
-      text-align: center;
-      font-weight: 500;
-      font-size: 1.5rem;
-      padding-top: 1rem;
-      font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: left;
     }
     > ul{
       font-size: 1.1rem;

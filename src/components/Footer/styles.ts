@@ -5,16 +5,12 @@ const SmallFooter = styled.footer`
     background-color: #000;
     bottom:0;
     .SmallPages{
-      padding: 1.5em;
+      padding: 0.8em;
+      text-align: center;
        li{
-        font-size: 0.8rem;
+        font-size: 1rem;
         display: block;
         margin: 0;
-     @media screen and (max-width: 768px){
-        font-size: 1rem;
-        text-align: center;
-        padding-left:0;
-    }
      }
     a{
         color: #fff;
@@ -39,17 +35,12 @@ const SmallFooter = styled.footer`
     }
   }
   .SmallIcons {
-    float: right;
-    margin-top:-5rem;
+    text-align: center;
+    margin: 0.5rem;
     a.social {
     margin: 0 0.5rem;
     transition: transform 250ms;
     display: inline-block;
-    }
-    @media screen and (max-width: 768px){
-       margin:1rem;
-       text-align: center;
-       float: none;
     }
     a.social:hover {
     transform: translateY(-4px);

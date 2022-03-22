@@ -18,5 +18,15 @@ export default createGlobalStyle`
   li{
       list-style-type: none;
   }
+  h1 {
+      font-weight: 500;
+      padding-top: 1rem;
+      font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    p{
+      color: #718096;
+      font-size: 1.1rem;
+      margin-top: 2rem;
+    }
 `;
 

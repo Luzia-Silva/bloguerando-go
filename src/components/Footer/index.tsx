@@ -12,10 +12,9 @@ const Footer = () => {
   return (
   <SmallFooter>
      <div className="SmallPages">
-        <a href="#"><li>Home</li></a>
-        <a href="Profile"><li>Perfil Profissional</li></a>
-        <a href="About"><li>Sobre mim</li></a>
-        <a href="#"><li>Contato</li></a>
+        <a href="/"><li>Inicio</li></a>
+        <a href="Profile"><li>Política de Privacidade</li></a>
+        <a href="#"><li>Formulário de Solicitação</li></a>
     </div>
     <div className="SmallIcons">
       <a href="https://www.youtube.com/c/jamesqquick"

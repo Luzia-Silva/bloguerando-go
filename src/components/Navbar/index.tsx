@@ -1,12 +1,11 @@
 import * as React from 'react';
-import SmallNavbar  from './styles';
-
+import SmallNavbar from './styles';
 const Navbar = () => {
     return(
       <SmallNavbar>
 
         <div id='Nav-Head'>
-          <a href='#'>Home</a>
+          <a href='/'>Home</a>
           <a href='Profile'>Perfil Profissional</a>
           <a href='About'>Sobre mim</a>
           <a href='#'>Contato</a>
