@@ -14,30 +14,27 @@ const QuizTable = styled.div`
   }
   .cardQuiz {
     background-color: #fff;
-    width:50rem;
     min-height: 200px;
     height: min-content;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 20px 10px rgb(0 0 0 / 15%);
-    display: flex;
     justify-content: space-evenly;
   }
-
   .score-section {
-    display: flex;
     font-size: 24px;
-    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
   }
-
-  /* QUESTION/TIMER/LEFT SECTION */
   .question-section {
     width: 100%;
     position: relative;
+    font-weight: 600;
   }
 
   .question-count {
     margin-bottom: 20px;
+       font-weight: 600;
   }
 
   .question-count span {
@@ -47,6 +44,8 @@ const QuizTable = styled.div`
   .question-text {
     margin-bottom: 12px;
     color: #000;
+    font-weight: 100;
+
   }
 
   .timer-text {

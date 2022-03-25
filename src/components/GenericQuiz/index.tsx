@@ -60,7 +60,7 @@ export default function App() {
 
 	return (
     <QuizTable>
-      <h1>Tire 3min para responder o Quiz da Lu✨👱‍♀️</h1>
+      <h1>Tire 1min para responder o Quiz da Lu✨👱‍♀️</h1>
       <div className='cardQuiz'>
         {showScore ? (
            <div className='score-section'>Você acertou {score} de {questions.length} 🤘✨😁</div>
