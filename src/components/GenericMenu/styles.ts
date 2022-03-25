@@ -13,9 +13,6 @@ const SmallMenu = styled.div`
     .text-menu > h1{
       font-size: 3.75rem;
       font-weight:600;
-    @media screen and (max-width: 768px){
-       font-size: 2rem;
-    }
     }
     .text-menu > h2{
       color: #c21ac1;
@@ -23,9 +20,6 @@ const SmallMenu = styled.div`
       font-weight: 500;
       margin-top: auto;
       margin-bottom: auto;
-      @media screen and (max-width: 768px){
-       font-size: 1.5rem;
-    }
     }
      .text-menu > p{
       text-align: center;
