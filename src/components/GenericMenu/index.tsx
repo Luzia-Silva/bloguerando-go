@@ -1,5 +1,3 @@
-import Footer  from '../../components/Footer'
-import Navbar  from '../../components/Navbar'
 import SmallMenu from './styles'
 
 const GenericMenu = () =>{
@@ -7,12 +5,12 @@ const GenericMenu = () =>{
     <>
     <SmallMenu>
       <div className='text-menu'>
-          <h1>Bloguerando.com</h1>
-          <h2>Seja um blogueirinhoooo!</h2>
-          <p>Esse blog é para você meu leitor que curte coisas novas e surtos de uma mente feminina em colapso. Mas essa mente feminina ama você, ama suas escolhas (mesmo eu querendo dar na sua cara), ama seu cabelo, ama sua roupa e ama você todinho. Você nem me conhece, como pode me amar? Eu amo você só pelo fato de você estar aqui e me dar a oportunidade de nos conhecermos. Sim, eu amo você! Seja muito bem-vindo aos meus mais profundos pensamentos e desabafos!</p>
+          <h1>Sejamos as mulheres</h1>
+          <h2>dos códigos rosas de alta complexidade! </h2>
+          <p></p>
       </div>
       <div className='button-menu'>
-        <button><a href='#'>Começar</a></button>
+        <button><a href='https://api.whatsapp.com/send?phone=5511999480735&text=Oieee%20Lu%2C%20vim%20pela%20sua%20Landing%20Page.%20Gostaria%20de%20bater%20um%20papo%20dev%20com%20voc%C3%AA.%20Partiiuuuu%3F%E2%9C%A8%F0%9F%98%81'>Partiu Socializar!✨ </a></button>
       </div>
     </SmallMenu>
     </>

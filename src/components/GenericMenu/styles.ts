@@ -11,14 +11,8 @@ const SmallMenu = styled.div`
        margin-top: 3rem;
     }
     .text-menu > h1{
-      color: #000;
       font-size: 3.75rem;
-      font-weight: 600;
-      margin-top: auto;
-      margin-bottom: auto;
-    @media screen and (max-width: 768px){
-       font-size: 2rem;
-    }
+      font-weight:600;
     }
     .text-menu > h2{
       color: #c21ac1;
@@ -26,21 +20,15 @@ const SmallMenu = styled.div`
       font-weight: 500;
       margin-top: auto;
       margin-bottom: auto;
-      @media screen and (max-width: 768px){
-       font-size: 1.5rem;
-    }
     }
      .text-menu > p{
-      color: #718096;
-      font-size: 1rem;
-      margin-top: 2rem;
-      text-justify: newspaper;
+      text-align: center;
     }
     .button-menu {
      text-align: center;
      margin-top: 2rem;
      button{
-        background-color:  #c21ac1;
+        background-color:  #000;
         border: none;
         border-radius: 2rem;
         padding: 10px 32px;

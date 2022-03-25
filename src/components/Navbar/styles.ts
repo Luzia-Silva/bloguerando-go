@@ -5,8 +5,7 @@ const SmallNavbar = styled.div`
      background-color: #000;
      #Nav-Head  a{
       color: #fff;
-      font-size: 1.1rem;
-
+      font-size: 0.8rem;
       padding: 1rem;
       }
       #Nav-Head a:hover {
@@ -16,7 +15,7 @@ const SmallNavbar = styled.div`
     }
     #Logo a{
       color: #fff;
-      font-size: 1rem;
+      font-size: 0.6rem;
       float: right;
       margin-top: -1rem;
     }
