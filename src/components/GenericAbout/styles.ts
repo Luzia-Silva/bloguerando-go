@@ -28,6 +28,7 @@ const SmallAbout = styled.div`
         p{
           width: 85%;
           text-align: justify;
+          line-height: 1.7rem;
         }
         hr{
           padding: 1rem;
