@@ -10,7 +10,10 @@ const QuizTable = styled.div`
     align-items: center;
     display: grid;
   h1{
-    margin:2rem;
+    margin: 0 2rem;
+  }
+  p{
+    margin: 1rem 2rem;
   }
   .cardQuiz {
     background-color: #fff;
