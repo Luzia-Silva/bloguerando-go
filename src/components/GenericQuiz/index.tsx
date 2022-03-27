@@ -60,7 +60,8 @@ export default function App() {
 
 	return (
     <QuizTable>
-      <h1>Tire 3min para responder o Quiz da Lu✨👱‍♀️</h1>
+      <h1>Porquê uma Business Call com a Lu?👱‍♀️✨</h1>
+      <p>Selecione as alternativas corretas dos motivos de você conhecer o meu job!</p>
       <div className='cardQuiz'>
         {showScore ? (
            <div className='score-section'>Você acertou {score} de {questions.length} 🤘✨😁</div>
