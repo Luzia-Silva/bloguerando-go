@@ -22,7 +22,7 @@ const GenericAbout = () =>{
             <Image
               src="/assets/mat.jpg"
               width={410}
-              height={370}
+              height={400}
               className="imagAda"
               alt="Picture of the author"
               layout={"fixed"}

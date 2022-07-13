@@ -1,4 +1,4 @@
-import {ContactForm, InputForms, ButtonForms, Error} from './styles';
+import {ContactForm , InputForms , ButtonForms , Error , TextareForm} from './styles';
 import React , {useCallback , useState} from 'react';
 import {IoAlertCircleOutline } from 'react-icons/io5'
 
@@ -27,9 +27,7 @@ const Contact = () =>{
                   <IoAlertCircleOutline color="#ff0000" size={14} />
                   <span>Informe o seu nome</span>
               </Error>}
-            <InputForms
-              className='message'
-              type="text"
+            <TextareForm
               placeholder='Messagem'
               value={email}
               onChange={(e)=> setEmail(e.target.value)}

@@ -8,9 +8,26 @@ interface ContactProps {
 export const ContactForm = styled.div`
   margin : 0.5rem;
   .message{
-    height: 3rem;
+    height: 5rem;
   }
 
+  `;
+export const TextareForm = styled.textarea<ContactProps>`
+  border: #929d9d 2px solid;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  width: 100%;
+  margin: 0.1rem;
+  display: flex;
+  height: 3rem;
+  font-family: Roboto,serif;
+  font-size: 12px;
+  @media screen and (max-width: 768px){
+    height: 6rem;
+  }
+  ${props => props.isFocused && css`
+    border: red 2px solid;
+  `};
   `;
 export const InputForms = styled.input<ContactProps>`
   border: #929d9d 2px solid;
@@ -19,9 +36,14 @@ export const InputForms = styled.input<ContactProps>`
   width: 100%;
   margin: 0.1rem;
   display: flex;
+  font-family: Roboto,serif;
+  font-size: 12px;
+  @media screen and (max-width: 768px){
+    padding: 0.6rem;
+  }
   ${props => props.isFocused && css`
     border: red 2px solid;
-  `}
+  `};
 `;
 export const ButtonForms = styled.button`
   color: white;

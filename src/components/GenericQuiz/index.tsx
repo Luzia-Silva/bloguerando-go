@@ -73,11 +73,10 @@ export default function App() {
                     <Image
                       alt="The girl crying."
                       src="https://media.giphy.com/media/ckGndVa23sCk9pae4l/giphy.gif"
-                      width={200}
-                      height={120}
+                      width={220}
+                      height={130}
                       layout="fixed"
                     />
-
                       :
                     <Image
                       alt="The guitarist in the concert."
@@ -94,7 +93,6 @@ export default function App() {
                     <p className='score-opciones'>Mande uma mensagem  e partiu se conectar 🚀🤘</p>
                     <Contact/>
                   </div>
-
                 </>
         ) : (
           <>
@@ -103,11 +101,11 @@ export default function App() {
                 <span>Questões {currentQuestion + 1}</span>/{questions.length}
               </div>
               <div className='question-text'>{questions[currentQuestion].questionText}</div>
-            </div>
-            <div className='answer-section'>
-              {questions[currentQuestion].answerOptions.map((answerOptions) =>
-                <ButtonQuiz key={'e'} onClick={()=>handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</ButtonQuiz>
-              )}
+              <div className='answer-section'>
+                {questions[currentQuestion].answerOptions.map((answerOptions) =>
+                  <ButtonQuiz key={'e'} onClick={()=>handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</ButtonQuiz>
+                )}
+              </div>
             </div>
           </>
         )}
