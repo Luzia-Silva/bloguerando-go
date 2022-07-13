@@ -3,17 +3,20 @@ const SmallProfile = styled.div`
     margin-top: 8rem;
     align-items: center;
     .imageProfile{
-      margin-left: 3rem;
+      display: flex;
       float: left;
-      margin-right: 2rem;
-      margin-top:2rem;
     }
     .imageMe{
+      margin-left: 3rem;
+
+      margin-right: 2rem;
+      margin-top:2rem;
       border-radius: 10rem;
     }
     #informationProfile
     { color: #000;
       background-color: #e81cd896;
+      ma
     > h1 {
       text-align: left;
     }

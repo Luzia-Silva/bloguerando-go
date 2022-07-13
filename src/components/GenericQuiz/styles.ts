@@ -22,7 +22,7 @@ export const QuizTable = styled.div`
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     background-color: #fff;
-    min-height: 200px;
+    min-height: 300px;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 20px 10px rgb(0 0 0 / 15%);
@@ -44,18 +44,15 @@ export const QuizTable = styled.div`
     align-items: baseline;
     align-content: stretch;
     justify-items: center;
-    iframe{
-      margin-top: 0.5rem;
-      max-height: 12rem;
-    }
+    margin-bottom:2rem;
 
   }
   .score-opciones{
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
-    margin: 0;
     color: black;
     font-weight: 700;
+    margin:0;
 
   }
   .question-section {

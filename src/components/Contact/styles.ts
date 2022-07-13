@@ -19,12 +19,9 @@ export const TextareForm = styled.textarea<ContactProps>`
   width: 100%;
   margin: 0.1rem;
   display: flex;
-  height: 3rem;
+  height: 6rem;
   font-family: Roboto,serif;
   font-size: 12px;
-  @media screen and (max-width: 768px){
-    height: 6rem;
-  }
   ${props => props.isFocused && css`
     border: red 2px solid;
   `};

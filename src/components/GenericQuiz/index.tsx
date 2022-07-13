@@ -72,17 +72,19 @@ export default function App() {
                       Você acertou {score} de {questions.length} {''}{(score <= 2 )?
                     <Image
                       alt="The girl crying."
-                      src="https://media.giphy.com/media/ckGndVa23sCk9pae4l/giphy.gif"
-                      width={220}
-                      height={130}
+                      src={"https://media.giphy.com/media/ckGndVa23sCk9pae4l/giphy.gif"
+                        || process.env.NEXT_PUBLIC_GIF_CRYNG}
+                      width={320}
+                      height={180}
                       layout="fixed"
                     />
                       :
                     <Image
                       alt="The guitarist in the concert."
-                      src="https://media.giphy.com/media/8wz2omZEbVzSU/giphy.gif"
-                      width={200}
-                      height={120}
+                      src={"https://media.giphy.com/media/8wz2omZEbVzSU/giphy.gif"
+                        || process.env.NEXT_PUBLIC_GIF_CONCERT}
+                      width={300}
+                      height={180}
                       layout="fixed"
                     />
                     }

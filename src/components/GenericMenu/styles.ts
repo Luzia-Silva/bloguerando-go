@@ -26,12 +26,11 @@ const SmallMenu = styled.div`
     }
     .button-menu {
      text-align: center;
-     margin-top: 2rem;
      button{
         background-color:  #000;
         border: none;
         border-radius: 2rem;
-        padding: 10px 32px;
+        padding: 15px 28px;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;

@@ -33,7 +33,7 @@ const GenericProfile = () =>{
              </ul>
              <ul className='informationObject'>
                 <b>Formação Acadêmica:</b>
-                <li> Ciência de Dados - Fatec Santana de Parnaíba - 4º Semestre</li>
+                <li> Ciência de Dados - Fatec Santana de Parnaíba - 5º Semestre</li>
                 <li> Desenvolvimento de Sistemas - ETEC Dr. Emílio Hernandez Aguilar - Técnico</li>
               </ul>
              <ul className='informationCourse'>
