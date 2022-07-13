@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import  {QuizTable, ButtonQuiz} from './styles'
 import Contact from "../Contact";
 import Image from "next/image";
+
 export default function App() {
 	const questions = [
 		{
@@ -69,22 +70,22 @@ export default function App() {
                 <>
                   <div className='score-section'>
                       Você acertou {score} de {questions.length} {''}{(score <= 2 )?
-                    <iframe
-                      src="https://giphy.com/embed/ckGndVa23sCk9pae4l"
-                      width="70%"
-                      height="auto"
-                      frameBorder="0"
-                      allowFullScreen>
+                    <Image
+                      alt="The girl crying."
+                      src="https://media.giphy.com/media/ckGndVa23sCk9pae4l/giphy.gif"
+                      width={200}
+                      height={120}
+                      layout="fixed"
+                    />
 
-                    </iframe>
                       :
-                    <iframe
-                      src="https://giphy.com/embed/8wz2omZEbVzSU"
-                      width="70%"
-                      height="auto"
-                      frameBorder="0"
-                      allowFullScreen>
-                    </iframe>
+                    <Image
+                      alt="The guitarist in the concert."
+                      src="https://media.giphy.com/media/8wz2omZEbVzSU/giphy.gif"
+                      width={200}
+                      height={120}
+                      layout="fixed"
+                    />
                     }
                   </div>
                   <div>
@@ -105,7 +106,7 @@ export default function App() {
             </div>
             <div className='answer-section'>
               {questions[currentQuestion].answerOptions.map((answerOptions) =>
-                <ButtonQuiz onClick={()=>handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</ButtonQuiz>
+                <ButtonQuiz key={'e'} onClick={()=>handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</ButtonQuiz>
               )}
             </div>
           </>

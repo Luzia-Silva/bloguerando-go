@@ -7,9 +7,7 @@ const SmallAbout = styled.div`
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        img{
-        height: 22em;
-        width: auto;
+       .imgAda{
         margin:0.1rem;
         }
     }

@@ -1,9 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-faJs
-} from "@fortawesome/free-brands-svg-icons";
 import React from 'react';
 import SmallAbout from './styles';
+import Image from "next/image";
 const GenericAbout = () =>{
   return(
     <>
@@ -22,7 +19,14 @@ const GenericAbout = () =>{
             </p>
         </div>
         <div className='imageAbout'>
-            <img src="../../assets/mat.jpg" />
+            <Image
+              src="/assets/mat.jpg"
+              width={410}
+              height={370}
+              className="imagAda"
+              alt="Picture of the author"
+              layout={"fixed"}
+            />
         </div>
       </div>
     </SmallAbout>

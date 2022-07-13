@@ -9,14 +9,20 @@ import {
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
 import SmallProfile from './styles';
-
+import Image from "next/image";
 
 const GenericProfile = () =>{
   return (
     <>
     <SmallProfile id={'Profile'}>
         <div className='imageProfile'>
-          <img src="../../pictureAbout.jpg"  alt='img'/>
+          <Image
+            src="/assets/pictureAbout.jpg"
+            width={300}
+            height={300}
+            className="imageMe"
+            alt="Picture of the author"
+            layout={"fixed"}/>
         </div>
         <div id='informationProfile'>
              <h1>Luzia Gabriela Abreu da Silva Santos</h1>

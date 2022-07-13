@@ -2,19 +2,25 @@ import styled from 'styled-components';
 const SmallProfile = styled.div`
     margin-top: 8rem;
     align-items: center;
-    .imageProfile img{
-      border-radius: 10rem;
+    .imageProfile{
       margin-left: 3rem;
       float: left;
       margin-right: 2rem;
       margin-top:2rem;
-      width: 300px;
+    }
+    .imageMe{
+      border-radius: 10rem;
     }
     #informationProfile
     { color: #000;
       background-color: #e81cd896;
     > h1 {
       text-align: left;
+    }
+      @media screen and (max-width: 760px){
+        >h1{
+          text-align: center;
+        }
     }
     > ul{
       font-size: 1.1rem;
