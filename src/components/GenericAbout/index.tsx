@@ -7,7 +7,7 @@ import SmallAbout from './styles';
 const GenericAbout = () =>{
   return(
     <>
-    <SmallAbout>
+    <SmallAbout id={'SobreMim'}>
       <div className="card">
         <div className="text-About">
           <h1>Porque área de TI? </h1>

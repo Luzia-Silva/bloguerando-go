@@ -7,14 +7,16 @@ import {
   faLinkedin,
   faGithub
 } from "@fortawesome/free-brands-svg-icons";
+import GenericProfile from "../GenericProfile";
 
 const Footer = () => {
   return (
   <SmallFooter>
      <div className="SmallPages">
-        <a href="/"><li>Inicio</li></a>
-        <a href="Profile"><li>Política de Privacidade</li></a>
-        <a href="#"><li>Formulário de Solicitação</li></a>
+        <a href="#"><li>Home</li></a>
+        <a href="#Profile"><li>Profile</li></a>
+       <a href="#SobreMim"><li>Sobre mim</li></a>
+        <a href="#Quiz"><li>Quiz</li></a>
     </div>
     <div className="SmallIcons">
       <a href="https://www.youtube.com/c/jamesqquick"

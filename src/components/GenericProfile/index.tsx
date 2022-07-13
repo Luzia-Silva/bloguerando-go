@@ -14,9 +14,9 @@ import SmallProfile from './styles';
 const GenericProfile = () =>{
   return (
     <>
-    <SmallProfile>
+    <SmallProfile id={'Profile'}>
         <div className='imageProfile'>
-          <img src="../../pictureAbout.jpg" />
+          <img src="../../pictureAbout.jpg"  alt='img'/>
         </div>
         <div id='informationProfile'>
              <h1>Luzia Gabriela Abreu da Silva Santos</h1>

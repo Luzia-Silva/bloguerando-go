@@ -4,7 +4,7 @@ const GenericMenu = () =>{
   return(
     <>
     <SmallMenu>
-      <div className='text-menu'>
+      <div  className='text-menu'>
           <h1>Sejamos as mulheres</h1>
           <h2>dos códigos rosas de alta complexidade! </h2>
           <p></p>

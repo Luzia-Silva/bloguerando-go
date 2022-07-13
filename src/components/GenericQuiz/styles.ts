@@ -44,7 +44,7 @@ export const QuizTable = styled.div`
     align-items: baseline;
     align-content: stretch;
     justify-items: center;
-    img{
+    iframe{
       margin-top: 0.5rem;
       max-height: 12rem;
     }

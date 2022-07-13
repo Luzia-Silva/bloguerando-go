@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import  {QuizTable, ButtonQuiz} from './styles'
 import Contact from "../Contact";
+import Image from "next/image";
 export default function App() {
 	const questions = [
 		{
@@ -68,17 +69,22 @@ export default function App() {
                 <>
                   <div className='score-section'>
                       Você acertou {score} de {questions.length} {''}{(score <= 2 )?
-                      <img
-                        src="https://media.giphy.com/media/ckGndVa23sCk9pae4l/giphy.gif"
-                        width="70%"  height='auto' alt='gif'
+                    <iframe
+                      src="https://giphy.com/embed/ckGndVa23sCk9pae4l"
+                      width="70%"
+                      height="auto"
+                      frameBorder="0"
+                      allowFullScreen>
 
-                      />
+                    </iframe>
                       :
-                      <img
-                        src="https://media.giphy.com/media/8wz2omZEbVzSU/giphy.gif"
-                        width="80%" height='auto'  alt='gif'
-
-                      />
+                    <iframe
+                      src="https://giphy.com/embed/8wz2omZEbVzSU"
+                      width="70%"
+                      height="auto"
+                      frameBorder="0"
+                      allowFullScreen>
+                    </iframe>
                     }
                   </div>
                   <div>
