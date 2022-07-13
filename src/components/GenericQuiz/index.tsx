@@ -1,41 +1,42 @@
 import React, { useState } from 'react';
-import QuizTable from './styles'
+import  {QuizTable, ButtonQuiz} from './styles'
+import Contact from "../Contact";
 export default function App() {
 	const questions = [
 		{
-			questionText: 'Quem Foi a Primeira Programador(a) do Mundo?',
+			questionText: 'Qual foi o Framework utilizado?',
 			answerOptions: [
-				{ answerText: 'Pitágoras', isCorrect: false },
-				{ answerText: 'Grace Hopper', isCorrect: false },
-				{ answerText: 'Ada Lovelace', isCorrect: true },
-				{ answerText: 'Alan Turing', isCorrect: false },
+				{ answerText: 'Bootstrap', isCorrect: false },
+				{ answerText: 'AngularJS', isCorrect: false },
+				{ answerText: 'Vue.js', isCorrect: false },
+				{ answerText: 'Nextjs', isCorrect: true},
 			],
 		},
 		{
-			questionText: 'Em GameOfThrones Jon Snow é o que de Daenerys Targaryen?',
+			questionText: 'Qual curso a Lu (Luzia) está fazendo ?',
 			answerOptions: [
-				{ answerText: 'Filho', isCorrect: false },
-				{ answerText: 'Sobrinho', isCorrect: true },
-				{ answerText: 'Amigo', isCorrect: false },
-				{ answerText: 'Peguete', isCorrect: false },
+				{ answerText: 'Filosofia', isCorrect: false },
+				{ answerText: 'Ciência de dados', isCorrect: true },
+				{ answerText: 'Analise e Desenvolvimento de Sistemas', isCorrect: false },
+				{ answerText: 'Segurança da Informação', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Como é o nome do caracol de Bob Esponja ?',
+			questionText: 'Quem é o pai/criador do React ?',
 			answerOptions: [
-				{ answerText: 'Gary', isCorrect: true },
-				{ answerText: 'Luck', isCorrect: false },
-				{ answerText: 'Juca', isCorrect: false },
-				{ answerText: 'Toninho', isCorrect: false },
+				{ answerText: 'Facebook', isCorrect: true },
+				{ answerText: 'Twitter', isCorrect: false },
+				{ answerText: 'Google', isCorrect: false },
+				{ answerText: 'Linkedin', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Quem é o dono da Tesla?',
+			questionText: 'Quais são os estágios de vida útil de um componente?',
 			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect:  false },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Lary Page', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
+				{ answerText: 'Renderização, Utilização e Destruição', isCorrect:  false },
+				{ answerText: 'Inicialização , Elementos e Reutilização', isCorrect: false },
+				{ answerText: 'Renderização, Atualização de estados e Destruição ', isCorrect: false },
+				{ answerText: 'Inicialização , Atualizações de estados e Destruição', isCorrect: true },
 			],
 		},
 	];
@@ -60,11 +61,34 @@ export default function App() {
 
 	return (
     <QuizTable>
-      <h1>Porquê uma Business Call com a Lu?👱‍♀️✨</h1>
-      <p>Selecione as alternativas corretas dos motivos de você conhecer o meu job!</p>
+      <h1>Você realmente viu o meu post no linkedin e o meu perfil?👱‍♀✨</h1>
+      <p>Selecione as alternativas corretas sobre o meu job e outras cositas! </p>
       <div className='cardQuiz'>
         {showScore ? (
-           <div className='score-section'>Você acertou {score} de {questions.length} 🤘✨😁</div>
+                <>
+                  <div className='score-section'>
+                      Você acertou {score} de {questions.length} {''}{(score <= 2 )?
+                      <img
+                        src="https://media.giphy.com/media/ckGndVa23sCk9pae4l/giphy.gif"
+                        width="70%"  height='auto' alt='gif'
+
+                      />
+                      :
+                      <img
+                        src="https://media.giphy.com/media/8wz2omZEbVzSU/giphy.gif"
+                        width="80%" height='auto'  alt='gif'
+
+                      />
+                    }
+                  </div>
+                  <div>
+                    <p className='score-opciones'> {(score < 2 )?
+                      'Temos que nos conhecer melhor 🥰 ' : 'Uauuauuaua, quero conhecer você também 😊'}</p>
+                    <p className='score-opciones'>Mande uma mensagem  e partiu se conectar 🚀🤘</p>
+                    <Contact/>
+                  </div>
+
+                </>
         ) : (
           <>
             <div className='question-section'>
@@ -75,7 +99,7 @@ export default function App() {
             </div>
             <div className='answer-section'>
               {questions[currentQuestion].answerOptions.map((answerOptions) =>
-                <button onClick={()=>handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</button>
+                <ButtonQuiz onClick={()=>handleAnswerOptionClick(answerOptions.isCorrect)}>{answerOptions.answerText}</ButtonQuiz>
               )}
             </div>
           </>

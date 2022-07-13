@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import GenericMenu from '../components/GenericMenu'
 import GenericProfile from '../components/GenericProfile'
 import GenericAbout from '../components/GenericAbout'
 import GenericQuiz from '../components/GenericQuiz'
+import Contact from "../components/Contact";
 
 const Home: React.FC = () => {
   return (
@@ -19,6 +19,4 @@ const Home: React.FC = () => {
   )
 }
 export default Home
-{/* <main>
-        <img src="../../pictureAbout.jpg" alt="About" />
-      </main> */}
+

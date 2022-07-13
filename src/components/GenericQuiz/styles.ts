@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
-
-const QuizTable = styled.div`
+export const QuizTable = styled.div`
     margin-top: 3rem;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -11,23 +10,53 @@ const QuizTable = styled.div`
     display: grid;
   h1{
     margin: 0 2rem;
+    max-width: 60rem;
+    text-align: center;
   }
   p{
     margin: 1rem 2rem;
+    text-align: center;
   }
   .cardQuiz {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     background-color: #fff;
     min-height: 200px;
-    height: min-content;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 20px 10px rgb(0 0 0 / 15%);
     justify-content: space-evenly;
+    margin: 0.4rem;
+    @media screen and (min-width: 768px){
+      display: flex;
+      margin: 0;
+
+
   }
+  }
+
   .score-section {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 700;
+    display: grid;
+    justify-content: center;
+    align-items: baseline;
+    align-content: stretch;
+    justify-items: center;
+    img{
+      margin-top: 0.5rem;
+      max-height: 12rem;
+    }
+
+  }
+  .score-opciones{
+    font-size: 16px;
     text-align: center;
-    margin-top: 4rem;
+    margin: 0;
+    color: black;
+    font-weight: 700;
+
   }
   .question-section {
     width: 100%;
@@ -69,20 +98,6 @@ const QuizTable = styled.div`
     justify-content: space-between;
   }
 
-  button {
-    width: 100%;
-    font-size: 16px;
-    color: #000;
-    background-color: #fff;
-    border-radius: 15px;
-    display: flex;
-    padding: 5px;
-    justify-content: flex-start;
-    align-items: center;
-    border: 5px solid #8714a3;
-    cursor: pointer;
-  }
-
   .correct {
     background-color: #2f922f;
   }
@@ -90,18 +105,31 @@ const QuizTable = styled.div`
   .incorrect {
     background-color: #ff3333;
   }
+`;
 
-  button:hover {
+export const ButtonQuiz = styled.button`
+  width: 100%;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  padding: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #8714a3;
+  cursor: pointer;
+
+  :hover {
     background-color: #8714a3;
     color: white;
   }
 
-  button:focus {
+  :focus {
     outline: none;
   }
 
-  button svg {
+  svg {
     margin-right: 5px;
   }
 `;
-export default QuizTable
